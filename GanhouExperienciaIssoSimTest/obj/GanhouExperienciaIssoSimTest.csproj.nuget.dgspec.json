@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSimTest\\GanhouExperienciaIssoSimTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSimTest\\GanhouExperienciaIssoSimTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSimTest\\GanhouExperienciaIssoSimTest.csproj",
+        "projectName": "GanhouExperienciaIssoSimTest",
+        "projectPath": "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSimTest\\GanhouExperienciaIssoSimTest.csproj",
+        "packagesPath": "C:\\Users\\Lucas Brito\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSimTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Lucas Brito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://bookchoice-com.pkgs.visualstudio.com/BookChoice/_packaging/BookchoiceFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim.csproj": {
+                "projectPath": "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim.csproj",
+        "projectName": "GanhouExperienciaIssoSim",
+        "projectPath": "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim.csproj",
+        "packagesPath": "C:\\Users\\Lucas Brito\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Lucas Brito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://bookchoice-com.pkgs.visualstudio.com/BookChoice/_packaging/BookchoiceFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

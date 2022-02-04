@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GanhouExperienciaIssoSim", "GanhouExperienciaIssoSim\GanhouExperienciaIssoSim.csproj", "{C0BFF289-F383-4ACE-AA30-619C303CD83B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GanhouExperienciaIssoSim", "GanhouExperienciaIssoSim\GanhouExperienciaIssoSim.csproj", "{C0BFF289-F383-4ACE-AA30-619C303CD83B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GanhouExperienciaIssoSimTest", "GanhouExperienciaIssoSimTest\GanhouExperienciaIssoSimTest.csproj", "{34E17E6A-4C53-4BF6-BEC4-0866D36EB05A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GanhouExperienciaIssoSimTest", "GanhouExperienciaIssoSimTest\GanhouExperienciaIssoSimTest.csproj", "{34E17E6A-4C53-4BF6-BEC4-0866D36EB05A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Front", "1. Front", "{69E82C0B-B9FE-4D28-80CC-AFA3521CC957}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Test", "3. Test", "{8EEEDA9F-3498-4EDF-A3AC-63E6749A4314}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{2E74AC69-7082-4A2F-98B0-ACFA89C294DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +30,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{34E17E6A-4C53-4BF6-BEC4-0866D36EB05A} = {2E74AC69-7082-4A2F-98B0-ACFA89C294DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3829C6A7-CDEE-41A4-89F5-82C8BAEF886F}
