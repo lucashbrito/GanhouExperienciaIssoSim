@@ -1674,11 +1674,24 @@
       "GanhouExperienciaIssoSim/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "GanhouExperienciaIssoSim.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/GanhouExperienciaIssoSim.dll": {}
         },
         "runtime": {
           "bin/placeholder/GanhouExperienciaIssoSim.dll": {}
+        }
+      },
+      "GanhouExperienciaIssoSim.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GanhouExperienciaIssoSim.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GanhouExperienciaIssoSim.Domain.dll": {}
         }
       }
     }
@@ -5977,11 +5990,17 @@
       "type": "project",
       "path": "../GanhouExperienciaIssoSim/GanhouExperienciaIssoSim.csproj",
       "msbuildProject": "../GanhouExperienciaIssoSim/GanhouExperienciaIssoSim.csproj"
+    },
+    "GanhouExperienciaIssoSim.Domain/1.0.0": {
+      "type": "project",
+      "path": "../GanhouExperienciaIssoSim.Domain/GanhouExperienciaIssoSim.Domain.csproj",
+      "msbuildProject": "../GanhouExperienciaIssoSim.Domain/GanhouExperienciaIssoSim.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "GanhouExperienciaIssoSim >= 1.0.0",
+      "GanhouExperienciaIssoSim.Domain >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.11.0",
       "coverlet.collector >= 3.1.0",
       "xunit >= 2.4.1",
@@ -5994,11 +6013,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSimTest\\GanhouExperienciaIssoSimTest.csproj",
+      "projectUniqueName": "C:\\Users\\Lucas Brito\\Documents\\GitHub\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSimTest\\GanhouExperienciaIssoSimTest.csproj",
       "projectName": "GanhouExperienciaIssoSimTest",
-      "projectPath": "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSimTest\\GanhouExperienciaIssoSimTest.csproj",
+      "projectPath": "C:\\Users\\Lucas Brito\\Documents\\GitHub\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSimTest\\GanhouExperienciaIssoSimTest.csproj",
       "packagesPath": "C:\\Users\\Lucas Brito\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSimTest\\obj\\",
+      "outputPath": "C:\\Users\\Lucas Brito\\Documents\\GitHub\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSimTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lucas Brito\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6016,8 +6035,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim.csproj": {
-              "projectPath": "C:\\Users\\Lucas Brito\\source\\repos\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim.csproj"
+            "C:\\Users\\Lucas Brito\\Documents\\GitHub\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim.Domain\\GanhouExperienciaIssoSim.Domain.csproj": {
+              "projectPath": "C:\\Users\\Lucas Brito\\Documents\\GitHub\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim.Domain\\GanhouExperienciaIssoSim.Domain.csproj"
+            },
+            "C:\\Users\\Lucas Brito\\Documents\\GitHub\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim.csproj": {
+              "projectPath": "C:\\Users\\Lucas Brito\\Documents\\GitHub\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim\\GanhouExperienciaIssoSim.csproj"
             }
           }
         }

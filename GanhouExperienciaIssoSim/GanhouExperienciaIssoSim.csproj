@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GanhouExperienciaIssoSim.Domain\GanhouExperienciaIssoSim.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Bets.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

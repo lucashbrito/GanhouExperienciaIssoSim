@@ -1,4 +1,2 @@
-﻿new GanhouExperienciaIssoSim.Game().Run();
-
-
+﻿new GanhouExperienciaIssoSim.Domain.Game().Run();
 Console.ReadLine();

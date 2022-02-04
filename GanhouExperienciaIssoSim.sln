@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Test", "3. Test", "{8EEE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{2E74AC69-7082-4A2F-98B0-ACFA89C294DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GanhouExperienciaIssoSim.Domain", "GanhouExperienciaIssoSim.Domain\GanhouExperienciaIssoSim.Domain.csproj", "{987E8F56-0BED-4258-A81C-A5B832C6D068}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,12 +29,17 @@ Global
 		{34E17E6A-4C53-4BF6-BEC4-0866D36EB05A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34E17E6A-4C53-4BF6-BEC4-0866D36EB05A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34E17E6A-4C53-4BF6-BEC4-0866D36EB05A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987E8F56-0BED-4258-A81C-A5B832C6D068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987E8F56-0BED-4258-A81C-A5B832C6D068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987E8F56-0BED-4258-A81C-A5B832C6D068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987E8F56-0BED-4258-A81C-A5B832C6D068}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{34E17E6A-4C53-4BF6-BEC4-0866D36EB05A} = {2E74AC69-7082-4A2F-98B0-ACFA89C294DB}
+		{34E17E6A-4C53-4BF6-BEC4-0866D36EB05A} = {8EEEDA9F-3498-4EDF-A3AC-63E6749A4314}
+		{987E8F56-0BED-4258-A81C-A5B832C6D068} = {2E74AC69-7082-4A2F-98B0-ACFA89C294DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3829C6A7-CDEE-41A4-89F5-82C8BAEF886F}

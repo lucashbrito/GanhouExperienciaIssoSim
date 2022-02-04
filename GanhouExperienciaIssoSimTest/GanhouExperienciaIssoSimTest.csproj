@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GanhouExperienciaIssoSim.Domain\GanhouExperienciaIssoSim.Domain.csproj" />
     <ProjectReference Include="..\GanhouExperienciaIssoSim\GanhouExperienciaIssoSim.csproj" />
   </ItemGroup>
 
