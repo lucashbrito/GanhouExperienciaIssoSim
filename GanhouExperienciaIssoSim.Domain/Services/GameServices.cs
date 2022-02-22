@@ -3,8 +3,19 @@ using GanhouExperienciaIssoSim.Domain.Repository;
 
 namespace GanhouExperienciaIssoSim.Domain.Services
 {
-    public class GameServices
+    public class GameServices : IGameServices
     {
+        public IBetRepository BetRepository { get; set; }
+
+        public GameServices(IBetRepository betRepository)
+        {
+            BetRepository = betRepository;
+        }
+        public GameServices()
+        {
+
+        }
+
         public void Run()
         {
             Console.WriteLine("Digite os 6 Numeros sorteados");
@@ -50,6 +61,6 @@ namespace GanhouExperienciaIssoSim.Domain.Services
                 numeroDoJogo++;
                 Console.ForegroundColor = ConsoleColor.White;
             }
-        }     
+        }
     }
 }
