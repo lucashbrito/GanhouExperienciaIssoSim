@@ -1,4 +1,7 @@
 using GanhouExperienciaIssoSim.Domain;
+using GanhouExperienciaIssoSim.Domain.Common;
+using GanhouExperienciaIssoSim.Domain.Repository;
+using GanhouExperienciaIssoSim.Domain.Services;
 using System.Collections.Generic;
 using Xunit;
 
@@ -10,25 +13,23 @@ namespace GanhouExperienciaIssoSimTest
         [InlineData("12,23,45,6,7,8")]
         public void Should_ReadGameAndKeepYouPoor(string game)
         {
-            var LuckyNumbers = new List<int>() { 1, 2, 3, 4, 5, 6 };
+            var LuckyNumbers = new PrizeDraw(new List<int>() { 1, 2, 3, 4, 5, 6 }, "2450");
 
-            var Game = new Game();
+            var Game = new GameServices();
 
-            var myGame = Game.ConvertMyGameStringToListInt(game);
+            var myGame = game.ConvertMyGameStringToListInt();
 
-            var numberOfRights = Game.GetNumberRights(LuckyNumbers, myGame);
+            var numberOfRights = LuckyNumbers.GetNumberRights(myGame);
 
-            var message = Game.DidWeWin(numberOfRights);
-
-            Assert.Equal("2022, vc vai trabalhar fdp! tamuh pobre! ", message);
+            Assert.Equal(1,numberOfRights);
         }
 
         [Fact]
         public void Should_ReadFileAndConvertInListOfBets()
         {
-            var Game = new Game();
+            var betRepository = new BetRepository();
 
-            var bets = Game.GetBeats();
+            var bets = betRepository.GetBets();
 
             Assert.NotNull(bets);
         }
