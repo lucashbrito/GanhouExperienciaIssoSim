@@ -11,12 +11,9 @@ namespace GanhouExperienciaIssoSim.Domain.Services
         {
             BetRepository = betRepository;
         }
-        public GameServices()
-        {
-
-        }
-
-        public void Run()
+      
+        #region Console
+        public void RunConsole()
         {
             Console.WriteLine("Digite os 6 Numeros sorteados");
 
@@ -34,20 +31,20 @@ namespace GanhouExperienciaIssoSim.Domain.Services
 
             var bets = betRepository.GetBets();
 
-            VerifyBets(prizeDraw, bets);
+            VerifyBetsConsole(prizeDraw, bets);
         }
 
-        private void VerifyBets(PrizeDraw luckNumbers, List<Bet> bets)
+        private void VerifyBetsConsole(PrizeDraw luckNumbers, List<Bet> bets)
         {
             var numeroDoJogo = 1;
 
-            foreach (var beat in bets)
+            foreach (var bet in bets)
             {
                 Console.WriteLine($"Conferindo Jogo Numero {numeroDoJogo}");
 
-                beat.NumbersOfRights = luckNumbers.GetNumberRights(beat.Numbers);
+                bet.SetHits(luckNumbers.GetNumberRightsConsole(bet.Numbers));
 
-                if (beat.NumbersOfRights > 5)
+                if (bet.Hits > 5)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
                 }
@@ -56,10 +53,42 @@ namespace GanhouExperienciaIssoSim.Domain.Services
                     Console.ForegroundColor = ConsoleColor.Red;
                 }
 
-                Console.WriteLine($" Acertos:{beat.NumbersOfRights}");
+                Console.WriteLine($" Acertos:{bet.Hits}");
 
                 numeroDoJogo++;
                 Console.ForegroundColor = ConsoleColor.White;
+            }
+        }
+        #endregion
+
+        public List<Bet> VerifyBets(string drawnNumbers, string name)
+        {
+            var luckNumbers = drawnNumbers.ConvertMyGameStringToListInt();
+
+            var prizeDraw = new PrizeDraw(luckNumbers, name);
+
+            var bets = BetRepository.GetBets();
+
+            VerifyBets(prizeDraw, bets);
+
+            return bets;
+        }
+
+        public List<Bet> GetBets()
+        {
+            return BetRepository.GetBets();
+        }
+
+
+        private void VerifyBets(PrizeDraw prizeDraw, List<Bet> bets)
+        {
+            foreach (var bet in bets)
+            {
+                (int hits, List<int> rightHits) = prizeDraw.GetHits(bet.Numbers);
+
+                bet.SetHits(hits);
+
+                bet.SetRightHits(rightHits);
             }
         }
     }

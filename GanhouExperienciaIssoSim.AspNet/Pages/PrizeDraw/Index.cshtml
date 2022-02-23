@@ -15,10 +15,7 @@
 
 <form>
     <p>
-        <select asp-for="MovieGenre" asp-items="Model.Genres">
-            <option value="">All</option>
-        </select>
-        Title: <input type="text" asp-for="SearchString" />
+        Number drawn: <input type="text" asp-for="SearchString" />
         <input type="submit" value="Filter" />
     </p>
 </form>
@@ -34,30 +31,39 @@
                 @Html.DisplayNameFor(model => model.Bets[0].Numbers)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Bets[0].NumbersOfRights)
-            </th>           
+                @Html.DisplayNameFor(model => model.Bets[0].RightHits)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bets[0].Hits)
+            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.Bets)
+        @if (Model.Bets != null)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.PrizeDrawName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Numbers)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.NumbersOfRights)
-                </td>
-                <td>
-                    <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
-            </tr>
+            @foreach (var item in Model.Bets)
+            {
+                <tr class="@(item.Hits >= 4? "table-success": "table-danger")">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PrizeDrawName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FormatNumbers)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem =>  item.FormatRightHits)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Hits)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
         }
     </tbody>
 </table>

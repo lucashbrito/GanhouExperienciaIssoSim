@@ -1,3 +1,4 @@
+using GanhouExperienciaIssoSim.Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -15,10 +16,28 @@ namespace GanhouExperienciaIssoSim.AspNet.Pages.PrizeDraw
         [BindProperty(SupportsGet = true)]
         public string SearchString { get; set; }
 
+        private IGameServices gameServices;
+
+        public IndexModel(IGameServices gameServices)
+        {
+            this.gameServices = gameServices;
+        }
+
         public IActionResult OnGet()
         {
-            
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                Bets = gameServices.VerifyBets(SearchString, "");
 
+                foreach (var bet in Bets)
+                {
+                    bet.GetFormatNumbers(",");
+                }
+
+                return Page();
+            }
+
+            Bets = gameServices.GetBets();
             return Page();
         }
     }

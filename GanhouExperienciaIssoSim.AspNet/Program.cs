@@ -1,7 +1,13 @@
+using GanhouExperienciaIssoSim.Domain.Repository;
+using GanhouExperienciaIssoSim.Domain.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddScoped<IGameServices, GameServices>();
+builder.Services.AddScoped<IBetRepository, BetRepository>();
 
 var app = builder.Build();
 

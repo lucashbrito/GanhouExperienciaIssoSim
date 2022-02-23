@@ -4,7 +4,7 @@
     {
         public PrizeDraw(List<int> luckNumbers, string? name)
         {
-            Numbers = luckNumbers;
+            NumbersDraws = luckNumbers;
             Name = name;
         }
 
@@ -12,16 +12,36 @@
 
         public string Name { get; set; }
 
-        public IList<int> Numbers { get; set; }
+        public IList<int> NumbersDraws { get; set; }
 
-        public int GetNumberRights(List<int> myGame)
+        public (int, List<int>) GetHits(List<int> betNumbers)
         {
             var numberOfrights = 0;
             var rightNumbers = new List<int>();
 
-            foreach (var luckNumber in Numbers)
+            foreach (var NumberDraw in NumbersDraws)
             {
-                foreach (var myNumber in myGame)
+                foreach (var myNumber in betNumbers)
+                {
+                    if (NumberDraw == myNumber)
+                    {
+                        numberOfrights++;
+                        rightNumbers.Add(myNumber);
+                    }
+                }
+            }
+
+            return (numberOfrights, rightNumbers);
+        }
+
+        public int GetNumberRightsConsole(List<int> betNumbers)
+        {
+            var numberOfrights = 0;
+            var rightNumbers = new List<int>();
+
+            foreach (var luckNumber in NumbersDraws)
+            {
+                foreach (var myNumber in betNumbers)
                 {
                     if (luckNumber == myNumber)
                     {
@@ -31,10 +51,11 @@
                 }
             }
 
-            PrintNumbers(myGame, rightNumbers);
+            PrintNumbers(betNumbers, rightNumbers);
 
             return numberOfrights;
         }
+
 
         private static void PrintNumbers(List<int> myGame, List<int> rightNumbers)
         {

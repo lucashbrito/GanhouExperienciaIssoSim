@@ -19,7 +19,7 @@ namespace GanhouExperienciaIssoSimTest
 
             var myGame = game.ConvertMyGameStringToListInt();
 
-            var numberOfRights = LuckyNumbers.GetNumberRights(myGame);
+            var numberOfRights = LuckyNumbers.GetHits(myGame);
 
             Assert.Equal(1,numberOfRights);
         }

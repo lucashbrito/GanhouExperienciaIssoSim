@@ -2,6 +2,8 @@
 {
     public interface IGameServices
     {
-        void Run();
+        void RunConsole();
+        List<Bet> VerifyBets(string drawnNumbers, string name);
+        List<Bet> GetBets();
     }
 }
