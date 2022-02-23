@@ -1,7 +1,6 @@
 using GanhouExperienciaIssoSim.Domain;
 using GanhouExperienciaIssoSim.Domain.Common;
 using GanhouExperienciaIssoSim.Domain.Repository;
-using GanhouExperienciaIssoSim.Domain.Services;
 using System.Collections.Generic;
 using Xunit;
 
