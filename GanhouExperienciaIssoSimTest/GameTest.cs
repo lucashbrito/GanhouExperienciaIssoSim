@@ -19,9 +19,9 @@ namespace GanhouExperienciaIssoSimTest
 
             var myGame = game.ConvertMyGameStringToListInt();
 
-            var numberOfRights = LuckyNumbers.GetHits(myGame);
+            (int hits, List<int> righHits) = LuckyNumbers.GetHits(myGame);
 
-            Assert.Equal(1,numberOfRights);
+            Assert.Equal(1, hits);
         }
 
         [Fact]

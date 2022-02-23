@@ -14,14 +14,25 @@
 </p>
 
 <form>
-    <p>
-        Number drawn: <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Filter" />
-    </p>
+    <div class="row g-3 align-items-center">
+        <div class="col-auto">
+            <label for="NumberDrawn" class="form-label"> Number drawn</label>
+        </div>
+        <div class="col-auto">
+            <input type="text" asp-for="SearchString" class="form-label" />
+        </div>
+        <div class="col-auto">
+            <span id="NumberDrawn" class="form-text">
+                Must be 6 numbers, split by comma ",". E.g. 1,2,3,4,5,6
+            </span>
+        </div>
+        <div>
+            <input type="submit" value="Filter" class="btn btn-primary" />
+        </div>
+    </div>
 </form>
 
-<table class="table">
-
+<table class="table table-hover">
     <thead>
         <tr>
             <th>

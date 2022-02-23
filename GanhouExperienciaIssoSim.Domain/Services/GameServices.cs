@@ -11,7 +11,11 @@ namespace GanhouExperienciaIssoSim.Domain.Services
         {
             BetRepository = betRepository;
         }
-      
+        public GameServices()
+        {
+
+        }
+
         #region Console
         public void RunConsole()
         {
