@@ -14,45 +14,42 @@
 </p>
 
 <form>
-    <div class="row g-3 align-items-center">
+    <div class="mb-3">
         <div class="col-auto">
             <label for="NumberDrawn" class="form-label"> Number drawn</label>
         </div>
-        <div class="col-auto">
-            <input type="text" asp-for="SearchString" class="form-label" />
+        <div class="mb-6">
+            <input type="text" asp-for="SearchString" class="form-control" />
+            <span id="NumberDrawn" class="form-text">Must be 6 numbers, split by comma ",". E.g. 1,2,3,4,5,6</span>
         </div>
-        <div class="col-auto">
-            <span id="NumberDrawn" class="form-text">
-                Must be 6 numbers, split by comma ",". E.g. 1,2,3,4,5,6
-            </span>
-        </div>
-        <div>
+        <div class="mb-3">
             <input type="submit" value="Filter" class="btn btn-primary" />
         </div>
     </div>
 </form>
 
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Bets[0].PrizeDrawName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Bets[0].Numbers)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Bets[0].RightHits)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Bets[0].Hits)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @if (Model.Bets != null)
-        {
+@if (Model.Bets != null)
+{
+    <table class="table table-hover">
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Bets[0].PrizeDrawName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Bets[0].Numbers)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Bets[0].RightHits)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Bets[0].Hits)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
             @foreach (var item in Model.Bets)
             {
                 <tr class="@(item.Hits >= 4? "table-success": "table-danger")">
@@ -75,6 +72,6 @@
                     </td>
                 </tr>
             }
-        }
-    </tbody>
-</table>
+        </tbody>
+    </table>
+}
