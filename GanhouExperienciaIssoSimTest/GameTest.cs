@@ -15,8 +15,6 @@ namespace GanhouExperienciaIssoSimTest
         {
             var LuckyNumbers = new PrizeDraw(new List<int>() { 1, 2, 3, 4, 5, 6 }, "2450");
 
-            var Game = new GameServices();
-
             var myGame = game.ConvertMyGameStringToListInt();
 
             (int hits, List<int> righHits) = LuckyNumbers.GetHits(myGame);
