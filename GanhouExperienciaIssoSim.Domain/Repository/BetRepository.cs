@@ -12,8 +12,12 @@
             {
                 if (lines[i].Contains("Aposta efetivada!"))
                 {
-                    i++;
                     var beat = new Bet();
+                    i++;
+                    
+                    if (i < lines.Length)
+                        beat.PrizeDrawName = lines[i];
+                    
                     for (int j = 0; j < 6; j++)
                     {
                         i += 1;
