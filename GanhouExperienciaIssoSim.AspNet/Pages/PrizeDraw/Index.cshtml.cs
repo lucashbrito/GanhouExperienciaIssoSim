@@ -31,13 +31,12 @@ namespace GanhouExperienciaIssoSim.AspNet.Pages.PrizeDraw
 
                 foreach (var bet in Bets)
                 {
-                    bet.GetFormatNumbers(",");
+                    bet.GetFormatNumbers("-");
                 }
 
                 return Page();
             }
-
-            Bets = gameServices.GetBets();
+          
             return Page();
         }
     }
