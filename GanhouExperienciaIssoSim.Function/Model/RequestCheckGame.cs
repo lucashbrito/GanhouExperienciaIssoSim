@@ -4,5 +4,6 @@
     {
         public string Name { get; set; }
         public string Numbers { get; set; }
+        public string SplitType { get; set; }
     }
 }

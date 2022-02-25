@@ -31,6 +31,11 @@ namespace GanhouExperienciaIssoSim.Function
 
             var bets = GameServices.VerifyBets(requestCheckGame.Numbers, requestCheckGame.Name);
 
+            foreach (var bet in bets)
+            {
+                bet.GetFormatNumbers(!string.IsNullOrEmpty(requestCheckGame.SplitType) ? requestCheckGame.SplitType : ",");
+            }
+
             log.LogInformation($"Numbers:{requestCheckGame.Numbers}, Name:{requestCheckGame.Name}. Total Bets{bets.Count}");
 
             return new OkObjectResult(new ResponseCheckGame() { Bets = bets });
