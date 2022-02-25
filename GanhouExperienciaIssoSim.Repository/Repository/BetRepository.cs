@@ -4,6 +4,12 @@ namespace GanhouExperienciaIssoSim.Repository
 {
     public class BetRepository : IBetRepository
     {
+
+        public BetRepository()
+        {
+
+        }
+
         public List<Bet> GetBets()
         {
             string[] lines = File.ReadAllLines(@"C:\Users\Lucas Brito\source\repos\GanhouExperienciaIssoSim\GanhouExperienciaIssoSim\Bets.txt");
