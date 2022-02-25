@@ -1,4 +1,6 @@
-﻿namespace GanhouExperienciaIssoSim.Domain.Services
+﻿using GanhouExperienciaIssoSim.Domain;
+
+namespace GanhouExperienciaIssoSim.Services
 {
     public interface IGameServices
     {

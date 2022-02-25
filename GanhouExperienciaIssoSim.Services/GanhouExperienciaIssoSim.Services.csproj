@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GanhouExperienciaIssoSim.Domain\GanhouExperienciaIssoSim.Domain.csproj" />
+    <ProjectReference Include="..\GanhouExperienciaIssoSim.Repository\GanhouExperienciaIssoSim.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

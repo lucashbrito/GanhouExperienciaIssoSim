@@ -1,4 +1,6 @@
-﻿namespace GanhouExperienciaIssoSim.Domain.Repository
+﻿using GanhouExperienciaIssoSim.Domain;
+
+namespace GanhouExperienciaIssoSim.Repository
 {
     public class BetRepository : IBetRepository
     {

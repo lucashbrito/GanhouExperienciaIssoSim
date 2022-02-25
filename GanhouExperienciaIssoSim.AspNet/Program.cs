@@ -1,5 +1,5 @@
-using GanhouExperienciaIssoSim.Domain.Repository;
-using GanhouExperienciaIssoSim.Domain.Services;
+using GanhouExperienciaIssoSim.Repository;
+using GanhouExperienciaIssoSim.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

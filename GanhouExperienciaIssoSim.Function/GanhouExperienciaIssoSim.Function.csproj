@@ -10,6 +10,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GanhouExperienciaIssoSim.Domain\GanhouExperienciaIssoSim.Domain.csproj" />
+    <ProjectReference Include="..\GanhouExperienciaIssoSim.Repository\GanhouExperienciaIssoSim.Repository.csproj" />
+    <ProjectReference Include="..\GanhouExperienciaIssoSim.Services\GanhouExperienciaIssoSim.Services.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

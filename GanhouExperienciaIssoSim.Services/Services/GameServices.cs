@@ -1,7 +1,8 @@
-﻿using GanhouExperienciaIssoSim.Domain.Common;
-using GanhouExperienciaIssoSim.Domain.Repository;
+﻿using GanhouExperienciaIssoSim.Domain;
+using GanhouExperienciaIssoSim.Domain.Common;
+using GanhouExperienciaIssoSim.Repository;
 
-namespace GanhouExperienciaIssoSim.Domain.Services
+namespace GanhouExperienciaIssoSim.Services
 {
     public class GameServices : IGameServices
     {

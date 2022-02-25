@@ -23,7 +23,7 @@
             Hits = hits;
         }
 
-        internal void SetRightHits(List<int> rightHits)
+        public void SetRightHits(List<int> rightHits)
         {
             RightHits = rightHits;
         }

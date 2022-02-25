@@ -1,5 +1,5 @@
-﻿using GanhouExperienciaIssoSim.Domain.Repository;
-using GanhouExperienciaIssoSim.Domain.Services;
+﻿using GanhouExperienciaIssoSim.Repository;
+using GanhouExperienciaIssoSim.Services;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 

@@ -332,3 +332,5 @@ ASALocalRun/
 /Bookchoice.Subscriptions.Api/appsettings.Production.json
 /Bookchoice.Subscriptions.Infrastructure.Repositories.Subscriptions/appsettings.Production.json
 /Bookchoice.Subscriptions.Api/appsettings.Development.json
+
+/GanhouExperienciaIssoSim/GanhouExperienciaIssoSimTest/bin

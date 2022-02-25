@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GanhouExperienciaIssoSimTes
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Front", "1. Front", "{69E82C0B-B9FE-4D28-80CC-AFA3521CC957}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Test", "3. Test", "{8EEEDA9F-3498-4EDF-A3AC-63E6749A4314}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Test", "4. Test", "{8EEEDA9F-3498-4EDF-A3AC-63E6749A4314}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{2E74AC69-7082-4A2F-98B0-ACFA89C294DB}"
 EndProject
@@ -18,6 +18,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GanhouExperienciaIssoSim.AspNet", "GanhouExperienciaIssoSim.AspNet\GanhouExperienciaIssoSim.AspNet.csproj", "{46AC0FDC-374B-4620-B4CE-FD74B489B470}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GanhouExperienciaIssoSim.Function", "GanhouExperienciaIssoSim.Function\GanhouExperienciaIssoSim.Function.csproj", "{8B5834F8-5580-4277-A4DB-277ECCD345A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Repository", "3. Repository", "{D8309E63-CE84-45E5-A44F-A1070C1C9F62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GanhouExperienciaIssoSim.Repository", "GanhouExperienciaIssoSim.Repository\GanhouExperienciaIssoSim.Repository.csproj", "{5A3F9D40-DA1E-4879-8931-34722AE7B9E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GanhouExperienciaIssoSim.Services", "GanhouExperienciaIssoSim.Services\GanhouExperienciaIssoSim.Services.csproj", "{F5191B7A-3F78-4303-8DD5-9E21EC234F61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,14 @@ Global
 		{8B5834F8-5580-4277-A4DB-277ECCD345A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B5834F8-5580-4277-A4DB-277ECCD345A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B5834F8-5580-4277-A4DB-277ECCD345A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A3F9D40-DA1E-4879-8931-34722AE7B9E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A3F9D40-DA1E-4879-8931-34722AE7B9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A3F9D40-DA1E-4879-8931-34722AE7B9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A3F9D40-DA1E-4879-8931-34722AE7B9E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5191B7A-3F78-4303-8DD5-9E21EC234F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5191B7A-3F78-4303-8DD5-9E21EC234F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5191B7A-3F78-4303-8DD5-9E21EC234F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5191B7A-3F78-4303-8DD5-9E21EC234F61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +69,8 @@ Global
 		{987E8F56-0BED-4258-A81C-A5B832C6D068} = {2E74AC69-7082-4A2F-98B0-ACFA89C294DB}
 		{46AC0FDC-374B-4620-B4CE-FD74B489B470} = {69E82C0B-B9FE-4D28-80CC-AFA3521CC957}
 		{8B5834F8-5580-4277-A4DB-277ECCD345A9} = {69E82C0B-B9FE-4D28-80CC-AFA3521CC957}
+		{5A3F9D40-DA1E-4879-8931-34722AE7B9E0} = {D8309E63-CE84-45E5-A44F-A1070C1C9F62}
+		{F5191B7A-3F78-4303-8DD5-9E21EC234F61} = {D8309E63-CE84-45E5-A44F-A1070C1C9F62}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3829C6A7-CDEE-41A4-89F5-82C8BAEF886F}

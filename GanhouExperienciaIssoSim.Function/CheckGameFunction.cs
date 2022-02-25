@@ -1,5 +1,5 @@
-using GanhouExperienciaIssoSim.Domain.Services;
 using GanhouExperienciaIssoSim.Function.Model;
+using GanhouExperienciaIssoSim.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;

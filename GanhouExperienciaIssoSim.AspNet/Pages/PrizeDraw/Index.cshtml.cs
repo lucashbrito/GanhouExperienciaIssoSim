@@ -1,4 +1,4 @@
-using GanhouExperienciaIssoSim.Domain.Services;
+using GanhouExperienciaIssoSim.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
