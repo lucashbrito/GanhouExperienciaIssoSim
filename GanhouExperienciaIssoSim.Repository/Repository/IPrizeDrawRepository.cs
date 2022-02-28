@@ -4,11 +4,10 @@ namespace GanhouExperienciaIssoSim.Repository
 {
     public interface IPrizeDrawRepository
     {
-        List<PrizeDraw> GetAllReadFromFile();
-        public PrizeDraw Create(Bet bet);
+        public PrizeDraw Create(PrizeDraw bet);
         IList<PrizeDraw> Get();
-        Bet Find(Guid id);
+        PrizeDraw Find(Guid id);
         void Update(PrizeDraw bet);
-        void Delete(PrizeDraw id);
+        void Delete(Guid id);
     }
 }

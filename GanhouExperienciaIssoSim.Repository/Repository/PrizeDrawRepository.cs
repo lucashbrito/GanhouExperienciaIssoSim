@@ -3,15 +3,15 @@ using MongoDB.Driver;
 
 namespace GanhouExperienciaIssoSim.Repository
 {
-    public class PrizeDraw : IBetRepository
+    public class PrizeDrawRepository : IPrizeDrawRepository
     {
         IMongoCollection<PrizeDraw> _PrizeDraws;
-        public PrizeDraw()
+        public PrizeDrawRepository()
         {
             var dbClient = new MongoClient("mongodb+srv://lucashbrito1:JoaoCarlos567@googlecluster0.pfsi6.mongodb.net/GanhouSim?retryWrites=true&w=majority");
 
             var database = dbClient.GetDatabase("GanhouSim");
-            _PrizeDraws = database.GetCollection<PrizeDraw>("Bets");
+            _PrizeDraws = database.GetCollection<PrizeDraw>("PrizeDraws");
 
         }    
         public PrizeDraw Create(PrizeDraw submission)

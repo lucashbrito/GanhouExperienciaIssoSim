@@ -13,6 +13,7 @@
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.0.1" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GanhouExperienciaIssoSim.Common\GanhouExperienciaIssoSim.Common.csproj" />
     <ProjectReference Include="..\GanhouExperienciaIssoSim.Domain\GanhouExperienciaIssoSim.Domain.csproj" />
     <ProjectReference Include="..\GanhouExperienciaIssoSim.Repository\GanhouExperienciaIssoSim.Repository.csproj" />
     <ProjectReference Include="..\GanhouExperienciaIssoSim.Services\GanhouExperienciaIssoSim.Services.csproj" />
