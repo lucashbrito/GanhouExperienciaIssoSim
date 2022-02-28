@@ -4,6 +4,11 @@ namespace GanhouExperienciaIssoSim.Repository
 {
     public interface IBetRepository
     {
-        List<Bet> GetBets();
+        List<Bet> GetAllReadFromFile();
+        public Bet Create(Bet bet);
+        IList<Bet> Get();
+        Bet Find(Guid id);
+        void Update(Bet bet);
+        void Delete(Guid id);
     }
 }
