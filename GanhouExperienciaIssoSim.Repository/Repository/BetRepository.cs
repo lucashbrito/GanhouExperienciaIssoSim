@@ -17,7 +17,7 @@ namespace GanhouExperienciaIssoSim.Repository
 
         public List<Bet> GetAllReadFromFile()
         {
-            string[] lines = File.ReadAllLines(@"C:\Users\Lucas Brito\source\repos\GanhouExperienciaIssoSim\GanhouExperienciaIssoSim\Bets.txt");
+            string[] lines = File.ReadAllLines(@"C:\Users\Lucas Brito\Documents\GitHub\GanhouExperienciaIssoSim\GanhouExperienciaIssoSim\Bets2461.txt");
 
             var beats = new List<Bet>();
 
