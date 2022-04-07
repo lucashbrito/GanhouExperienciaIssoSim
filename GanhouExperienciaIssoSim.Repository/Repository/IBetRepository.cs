@@ -4,7 +4,7 @@ namespace GanhouExperienciaIssoSim.Repository
 {
     public interface IBetRepository
     {
-        List<Bet> GetAllReadFromFile();
+        List<Bet> GetAllReadFromFile(string game);
         public Bet Create(Bet bet);
         IList<Bet> Get();
         Bet Find(Guid id);

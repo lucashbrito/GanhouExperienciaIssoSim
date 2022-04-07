@@ -26,7 +26,7 @@ namespace GanhouExperienciaIssoSimTest
         {
             var betRepository = new BetRepository();
 
-            var bets = betRepository.GetAllReadFromFile();
+            var bets = betRepository.GetAllReadFromFile("");
 
             Assert.NotNull(bets);
         }

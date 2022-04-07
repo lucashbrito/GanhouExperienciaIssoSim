@@ -16,6 +16,9 @@ namespace GanhouExperienciaIssoSim.AspNet.Pages.PrizeDraw
         [BindProperty(SupportsGet = true)]
         public string SearchString { get; set; }
 
+        [BindProperty(SupportsGet = true)]
+        public string NameGame { get; set; }
+
         private IGameServices gameServices;
 
         public IndexModel(IGameServices gameServices)
@@ -27,7 +30,7 @@ namespace GanhouExperienciaIssoSim.AspNet.Pages.PrizeDraw
         {
             if (!string.IsNullOrEmpty(SearchString))
             {
-                Bets = gameServices.VerifyBets(SearchString, "");
+                Bets = gameServices.VerifyBets(SearchString, NameGame);
 
                 foreach (var bet in Bets)
                 {
@@ -38,6 +41,12 @@ namespace GanhouExperienciaIssoSim.AspNet.Pages.PrizeDraw
             }
           
             return Page();
+        }
+
+
+        public async Task<IActionResult> OnPost()
+        {
+
         }
     }
 }

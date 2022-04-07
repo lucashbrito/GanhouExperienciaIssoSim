@@ -34,7 +34,7 @@ namespace GanhouExperienciaIssoSim.Services
 
             var betRepository = new BetRepository();
 
-            var bets = betRepository.GetAllReadFromFile();
+            var bets = betRepository.GetAllReadFromFile(name);
 
             VerifyBetsConsole(prizeDraw, bets);
         }
@@ -72,7 +72,7 @@ namespace GanhouExperienciaIssoSim.Services
 
             var prizeDraw = new PrizeDraw(luckNumbers, name);
 
-            var bets = BetRepository.GetAllReadFromFile();
+            var bets = BetRepository.GetAllReadFromFile(name);
 
             VerifyBets(prizeDraw, bets);
 
@@ -81,7 +81,7 @@ namespace GanhouExperienciaIssoSim.Services
 
         public List<Bet> GetBets()
         {
-            return BetRepository.GetAllReadFromFile();
+            return BetRepository.GetAllReadFromFile(null);
         }
 
         private void VerifyBets(PrizeDraw prizeDraw, List<Bet> bets)

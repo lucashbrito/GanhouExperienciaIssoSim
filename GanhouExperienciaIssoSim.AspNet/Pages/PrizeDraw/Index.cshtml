@@ -11,7 +11,7 @@
 
 @*<p>
     <a asp-page="Create">Create New</a>
-</p>
+    </p>
 *@
 
 <form>
@@ -23,11 +23,24 @@
             <input type="text" asp-for="SearchString" class="form-control" />
             <span id="NumberDrawn" class="form-text">Must be 6 numbers, split by comma ",". E.g. 1,2,3,4,5,6</span>
         </div>
+        <div class="col-auto">
+            <label for="NameGame" class="form-label"> Number game</label>
+        </div>
+        <div class="mb-6">
+            <input type="text" asp-for="SearchString" class="form-control" />
+            <span id="NameGame" class="form-text">Number of the game</span>
+        </div>
         <div class="mb-3">
             <input type="submit" value="Filter" class="btn btn-primary" />
         </div>
     </div>
 </form>
+
+<div class="mb-3">
+    <div class="mb-3">
+        <input type="button" value="ImportGame" class="btn btn-primary" />
+    </div>
+</div>
 
 @if (Model.Bets != null)
 {
