@@ -23,7 +23,7 @@ namespace GanhouExperienciaIssoSim.Repository
 
             for (int i = 0; i < lines.Length; i++)
             {
-                if (lines[i].Contains("Aposta efetivada!"))
+                if (lines[i].Contains("Aposta efetivada!") || lines[i].Contains("2550"))
                 {
                     var beat = new Bet();
                     i++;

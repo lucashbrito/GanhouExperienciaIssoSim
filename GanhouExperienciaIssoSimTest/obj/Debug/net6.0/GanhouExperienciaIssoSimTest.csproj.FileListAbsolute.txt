@@ -235,3 +235,4 @@ C:\Users\Lucas Brito\Documents\GitHub\GanhouExperienciaIssoSim\GanhouExperiencia
 C:\Users\Lucas Brito\Documents\GitHub\GanhouExperienciaIssoSim\GanhouExperienciaIssoSimTest\obj\Debug\net6.0\GanhouExperienciaIssoSimTest.pdb
 C:\Users\Lucas Brito\Documents\GitHub\GanhouExperienciaIssoSim\GanhouExperienciaIssoSimTest\obj\Debug\net6.0\GanhouExperienciaIssoSimTest.genruntimeconfig.cache
 C:\Users\Lucas Brito\Documents\GitHub\GanhouExperienciaIssoSim\GanhouExperienciaIssoSimTest\obj\Debug\net6.0\ref\GanhouExperienciaIssoSimTest.dll
+C:\Users\Lucas Brito\Documents\GitHub\GanhouExperienciaIssoSim\GanhouExperienciaIssoSimTest\bin\Debug\net6.0\Bets2469.txt
