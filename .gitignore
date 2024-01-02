@@ -334,3 +334,4 @@ ASALocalRun/
 /Bookchoice.Subscriptions.Api/appsettings.Development.json
 
 /GanhouExperienciaIssoSim/GanhouExperienciaIssoSimTest/bin
+/GanhouExperienciaIssoSimTest/obj/Debug/net6.0/GanhouExperienciaIssoSimTest.assets.cache

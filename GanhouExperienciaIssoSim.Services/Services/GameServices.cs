@@ -49,22 +49,46 @@ namespace GanhouExperienciaIssoSim.Services
 
                 bet.SetHits(luckNumbers.GetNumberRightsConsole(bet.Numbers));
 
-                if (bet.Hits > 5)
-                {
-                    Console.ForegroundColor = ConsoleColor.Green;
-                }
-                else
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                }
+                SetConsoleColorBasedOnHits(bet.Hits);
 
                 Console.WriteLine($" Acertos:{bet.Hits}");
 
                 numeroDoJogo++;
                 Console.ForegroundColor = ConsoleColor.White;
             }
+
+            Console.WriteLine($"Juntei todos os jogos {bets.Count}, acertamos todos os numeros sorteado? {CheckIfAllNumbersCovered(bets, luckNumbers)}"); ;
         }
+        private void SetConsoleColorBasedOnHits(int hits)
+        {
+            Console.ForegroundColor = hits > 5 ? ConsoleColor.Green : ConsoleColor.Red;
+        }
+
         #endregion
+
+        public bool CheckIfAllNumbersCovered(List<Bet> bets, PrizeDraw luckNumbers)
+        {
+            HashSet<int> allBetNumbers = new HashSet<int>();
+
+
+            foreach (var bet in bets)
+            {
+                foreach (var number in bet.Numbers)
+                {
+                    allBetNumbers.Add(number);
+                }
+            }
+
+            foreach (var number in luckNumbers.NumbersDraws)
+            {
+                if (!allBetNumbers.Contains(number))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
 
         public List<Bet> VerifyBets(string drawnNumbers, string name)
         {

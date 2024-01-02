@@ -17,32 +17,40 @@ namespace GanhouExperienciaIssoSim.Repository
 
         public List<Bet> GetAllReadFromFile(string game)
         {
-            string[] lines = File.ReadAllLines($@"C:\Users\Lucas Brito\Documents\GitHub\GanhouExperienciaIssoSim\GanhouExperienciaIssoSim\Bets{game}.txt");
+            string basePath = AppDomain.CurrentDomain.BaseDirectory;
+            string relativePath = $@"Bets{game}.txt";
+            string fullPath = Path.Combine(basePath, relativePath);
 
-            var beats = new List<Bet>();
+            string[] lines = File.ReadAllLines(fullPath);
 
-            for (int i = 0; i < lines.Length; i++)
+            var bets = new List<Bet>();
+
+            Bet currentBet = null;
+
+            foreach (var line in lines)
             {
-                if (lines[i].Contains("Aposta efetivada!") || lines[i].Contains("2550"))
+                if (line.Contains("Efetivada"))
                 {
-                    var beat = new Bet();
-                    i++;
-
-                    if (i < lines.Length)
-                        beat.PrizeDrawName = lines[i];
-
-                    for (int j = 0; j < 6; j++)
+                    if (currentBet != null && currentBet.Numbers.Count == 6)
                     {
-                        i += 1;
-                        if (i < lines.Length && int.TryParse(lines[i], out int number))
-                            beat.Numbers.Add(number);
+                        bets.Add(currentBet);
                     }
-                    if (beat.Numbers.Count == 6)
-                        beats.Add(beat);
+
+                    currentBet = new Bet();
+                }
+                else if (currentBet != null && int.TryParse(line, out int number))
+                {
+                    currentBet.Numbers.Add(number);
                 }
             }
 
-            return beats;
+            if (currentBet != null && currentBet.Numbers.Count == 6)
+            {
+                bets.Add(currentBet);
+            }
+
+
+            return bets;
         }
 
         public Bet Create(Bet submission)
